@@ -377,16 +377,11 @@
 }
 
 .download-table {
-    border: 1px solid #535353;
     border-collapse: collapse;
     max-width: 100%;
     text-align: center;
 }
 
-.download-table td {
-   border: 1px solid #535353;
-    
-}
 
 .download-table svg {
     width: 32px;
