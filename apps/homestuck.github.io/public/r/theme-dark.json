@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-dark",
+  "type": "registry:theme",
+  "files": [],
+  "css": {
+    "[data-theme=\"dark\"]": {
+      "--background": "black",
+      "--main": "var(--color-mspa-800)",
+      "--main-foreground": "white",
+      "--card": "var(--color-mspa-900)",
+      "--card-foreground": "white",
+      "--popover": "black",
+      "--popover-foreground": "white",
+      "--primary": "var(--color-sgrub)",
+      "--primary-foreground": "white",
+      "--secondary": "var(--color-mspa-700)",
+      "--secondary-foreground": "white",
+      "--destructive": "var(--color-sburb-alpha)",
+      "--destructive-foreground": "white",
+      "--muted": "var(--color-mspa-700)",
+      "--muted-foreground": "var(--color-mspa-300)",
+      "--accent": "var(--color-mspa-800)",
+      "--accent-foreground": "var(--color-mspa-100)",
+      "--border": "var(--color-mspa-500)",
+      "--input": "var(--color-mspa-500)",
+      "--ring": "var(--color-sgrub)",
+      "--toast-outline": "var(--color-mspa-500)",
+      "--toast-border": "var(--color-mspa-700)"
+    }
+  }
+}
