@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-default",
+  "type": "registry:theme",
+  "files": [],
+  "cssVars": {
+    "light": {
+      "radius": "0rem",
+      "background": "var(--color-mspa-700)",
+      "main": "white",
+      "main-foreground": "black",
+      "card": "var(--color-mspa-100)",
+      "card-foreground": "black",
+      "popover": "white",
+      "popover-foreground": "black",
+      "primary": "var(--color-sburb-beta)",
+      "primary-foreground": "white",
+      "secondary": "var(--color-mspa-400)",
+      "secondary-foreground": "white",
+      "destructive": "var(--color-sburb-alpha)",
+      "destructive-foreground": "white",
+      "muted": "var(--color-mspa-300)",
+      "muted-foreground": "var(--color-mspa-700)",
+      "accent": "var(--color-mspa-300)",
+      "accent-foreground": "var(--color-mspa-900)",
+      "border": "var(--color-mspa-500)",
+      "input": "var(--color-mspa-500)",
+      "ring": "var(--color-sburb-beta)",
+      "toast-outline": "var(--color-mspa-300)",
+      "toast-border": "var(--color-mspa-400)",
+      "extrude-x": "1",
+      "extrude-y": "1"
+    }
+  }
+}

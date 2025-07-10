@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "utils",
+  "type": "registry:lib",
+  "dependencies": [
+    "class-variance-authority",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "files": [
+    {
+      "path": "src/registry/lib/utils.ts",
+      "content": "import { extendTailwindMerge, validators } from 'tailwind-merge'\r\nimport type { ClassValue } from 'clsx'\r\nimport { cva, cx, type VariantProps } from 'class-variance-authority'\r\n\r\nconst twMerge = extendTailwindMerge({\r\n  override: {\r\n    classGroups: {\r\n      shadow: [\r\n        {\r\n          shadow: [\r\n            'none',\r\n            'extrude-sm',\r\n            'extrude-base',\r\n            'extrude-lg',\r\n            'extrude-xl',\r\n            'outline',\r\n          ],\r\n        },\r\n      ],\r\n      'shadow-color': [\r\n        {\r\n          shadow: [validators.isArbitraryVariable, validators.isArbitraryValue],\r\n        },\r\n      ],\r\n      'text-shadow': [\r\n        {\r\n          'text-shadow': [\r\n            'none',\r\n            'extrude-sm',\r\n            'extrude-base',\r\n            'extrude-lg',\r\n            'extrude-xl',\r\n            'outline',\r\n            validators.isArbitraryVariableShadow,\r\n            validators.isArbitraryShadow,\r\n          ],\r\n        },\r\n      ],\r\n      'text-shadow-color': [\r\n        {\r\n          'text-shadow': [validators.isAny],\r\n        },\r\n      ],\r\n    },\r\n  },\r\n})\r\n\r\nconst tw = (\r\n  template: {\r\n    raw: readonly string[] | ArrayLike<string>\r\n  },\r\n  ...substitutions: any[]\r\n) => String.raw(template, substitutions)\r\n\r\nconst cn = (...inputs: ClassValue[]) => twMerge(cx(inputs))\r\n\r\nexport { cva, cx, cn, tw }\r\nexport type { ClassValue, VariantProps }\r\n",
+      "type": "registry:lib"
+    }
+  ]
+}

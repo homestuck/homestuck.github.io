@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "theme-dirk",
+  "type": "registry:theme",
+  "files": [],
+  "css": {
+    "[data-theme=\"dirk\"]": {
+      "--primary": "var(--color-dirk)",
+      "--ring": "var(--color-dirk)"
+    }
+  }
+}
