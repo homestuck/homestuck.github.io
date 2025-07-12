@@ -1,13 +1,13 @@
 export default function Home() {
   return (
-    <main className='min-w-4xl bg-secondary text-main-foreground max-w-4xl w-fit flex flex-col items-center py-4 font-sans'>
+    <main className='min-w-4xl bg-border text-main-foreground max-w-4xl w-fit flex flex-col items-center py-4 font-sans'>
       <article className='bg-main flex flex-col gap-4 justify-center min-w-lg max-w-lg w-fit *:not-first:px-6 *:last:pb-8'>
-        <header className='bg-mspa-100 border-b-4 border-secondary p-4'>
+        <header className='bg-mspa-100 border-b-4 p-4'>
           <h1 className='uppercase font-mono text-4xl font-bold text-center'>
             The Unofficial Homestuck Collection
           </h1>
         </header>
-        <section id='#about'>
+        <section id='about'>
           <p>
             <strong>About the Unofficial Homestuck Collection</strong>
           </p>
@@ -42,7 +42,7 @@ export default function Home() {
             .
           </p>
         </section>
-        <section id='#download'>
+        <section id='download'>
           <p>
             <strong>Download</strong>
           </p>
@@ -83,7 +83,7 @@ export default function Home() {
             </tbody>
           </table>
         </section>
-        <section className='text-xs italic'>
+        <section id='copyright' className='text-xs italic'>
           <p>The Unofficial Homestuck Collection</p>
           <p>
             Software copyright (C) 2020-2021 Bambosh, (C) 2021-2023 Bambosh and

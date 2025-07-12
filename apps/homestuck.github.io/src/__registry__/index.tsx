@@ -10,9 +10,27 @@ export const Index: Record<string, any> = {
     name: "index",
     description: "",
     type: "registry:style",
-    registryDependencies: ["https://homestuck.github.io/r/theme-default.json","https://homestuck.github.io/r/theme-dark.json","https://homestuck.github.io/r/theme-dirk.json","https://homestuck.github.io/r/utils.json"],
+    registryDependencies: ["https://homestuck.github.io/r/colors/index.json","https://homestuck.github.io/r/theme-default.json","https://homestuck.github.io/r/theme-dark.json","https://homestuck.github.io/r/theme-dirk.json","https://homestuck.github.io/r/utils.json"],
     files: [],
     component: null,
+    categories: undefined,
+    meta: undefined,
+  },
+  "colors/index": {
+    name: "colors/index",
+    description: "",
+    type: "registry:item",
+    registryDependencies: undefined,
+    files: [{
+      path: "registry/default/styles/colors.css",
+      type: "registry:file",
+      target: "styles/colors.css"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/styles/colors.css")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
     categories: undefined,
     meta: undefined,
   },

@@ -6,6 +6,7 @@
   "css": {
     "[data-theme=\"dark\"]": {
       "--background": "black",
+      "--foreground": "white",
       "--main": "var(--color-mspa-800)",
       "--main-foreground": "white",
       "--card": "var(--color-mspa-900)",

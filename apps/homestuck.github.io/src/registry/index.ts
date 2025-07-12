@@ -6,7 +6,8 @@ import { examples } from './registry-examples'
 import { colors } from './style-colors'
 import { utilities } from './style-utilities'
 
-const URL = 'https://homestuck.github.io'
+import 'dotenv/config'
+const URL = String(process.env.APP_URL)
 
 export const registry = {
   name: 'grist',
@@ -23,26 +24,19 @@ export const registry = {
         'tailwind-merge',
       ],
       registryDependencies: [
+        `${URL}/r/colors/index.json`,
         `${URL}/r/theme-default.json`,
         `${URL}/r/theme-dark.json`,
         `${URL}/r/theme-dirk.json`,
         `${URL}/r/utils.json`,
       ],
       files: [],
-      cssVars: {
-        theme: {
-          'font-sans': "'Verdana', sans-serif",
-          'font-serif': "'Adobe Garamond Pro', serif",
-          'font-mono': "'Courier New', monospace",
-          'font-adobe-garamond-pro': "'Adobe Garamond Pro', serif",
-          'font-homestuck': "'Homestuck', monospace",
-          ...colors,
-        },
-      },
       css: {
+        "@import './colors.css'": {},
         ...utilities,
       },
     },
+    ...colors,
     ...lib,
     ...themes,
     ...ui,

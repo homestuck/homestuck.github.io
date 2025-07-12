@@ -1,24 +1,18 @@
-export const colors = {
-  john: '#0715cd',
-  ghostytrickster: '#0715cd',
-  ectobiologist: '#0715cd',
-  rose: '#b536da',
-  tentacletherapist: '#b536da',
-  dave: '#e00707',
-  turntechgodhead: '#e00707',
-  jade: '#4ac925',
-  gardengnostic: '#4ac925',
-  jane: '#00d5f2',
-  'jane-epilogues': '#0097d7',
-  gutsygumshoe: '#00d5f2',
-  'gutsygumshoe-epilogues': '#0097d7',
-  jake: '#1f9400',
-  golgothasterror: '#1f9400',
-  dirk: '#f2a400',
-  timaeustestified: '#f2a400',
-  autoresponder: '#e00707',
-  'lil-hal': '#e00707',
-  'timaeustestified-red': '#e00707',
-  roxy: '#ff6ff2',
-  tipsygnostalgic: '#ff6ff2',
-}
+import { type Registry } from 'shadcn/registry'
+import 'dotenv/config'
+const URL = String(process.env.APP_URL)
+
+export const colors: Registry['items'] = [
+  {
+    name: 'colors/index',
+    type: 'registry:item',
+    extends: 'none',
+    files: [
+      {
+        path: 'styles/colors.css',
+        type: 'registry:file',
+        target: 'styles/colors.css',
+      },
+    ],
+  },
+]
