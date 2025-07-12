@@ -1,6 +1,7 @@
 import { type Registry } from 'shadcn/registry'
 
-const URL = 'https://homestuck.github.io'
+import 'dotenv/config'
+const URL = String(process.env.APP_URL)
 
 export const examples: Registry['items'] = [
   {

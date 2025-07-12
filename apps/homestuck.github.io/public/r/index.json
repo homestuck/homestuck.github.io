@@ -10,44 +10,15 @@
     "tailwind-merge"
   ],
   "registryDependencies": [
+    "https://homestuck.github.io/r/colors/index.json",
     "https://homestuck.github.io/r/theme-default.json",
     "https://homestuck.github.io/r/theme-dark.json",
     "https://homestuck.github.io/r/theme-dirk.json",
     "https://homestuck.github.io/r/utils.json"
   ],
   "files": [],
-  "cssVars": {
-    "theme": {
-      "font-sans": "'Verdana', sans-serif",
-      "font-serif": "'Adobe Garamond Pro', serif",
-      "font-mono": "'Courier New', monospace",
-      "font-adobe-garamond-pro": "'Adobe Garamond Pro', serif",
-      "font-homestuck": "'Homestuck', monospace",
-      "john": "#0715cd",
-      "ghostytrickster": "#0715cd",
-      "ectobiologist": "#0715cd",
-      "rose": "#b536da",
-      "tentacletherapist": "#b536da",
-      "dave": "#e00707",
-      "turntechgodhead": "#e00707",
-      "jade": "#4ac925",
-      "gardengnostic": "#4ac925",
-      "jane": "#00d5f2",
-      "jane-epilogues": "#0097d7",
-      "gutsygumshoe": "#00d5f2",
-      "gutsygumshoe-epilogues": "#0097d7",
-      "jake": "#1f9400",
-      "golgothasterror": "#1f9400",
-      "dirk": "#f2a400",
-      "timaeustestified": "#f2a400",
-      "autoresponder": "#e00707",
-      "lil-hal": "#e00707",
-      "timaeustestified-red": "#e00707",
-      "roxy": "#ff6ff2",
-      "tipsygnostalgic": "#ff6ff2"
-    }
-  },
   "css": {
+    "@import './colors.css'": {},
     "@utility animate-text-ultimate-reward": {
       "animation-composition": "add"
     },
