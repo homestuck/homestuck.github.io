@@ -5,7 +5,7 @@ const URL = String(process.env.APP_URL)
 
 export const examples: Registry['items'] = [
   {
-    name: 'button-demo',
+    name: 'examples/button-demo',
     type: 'registry:example',
     registryDependencies: [`${URL}/r/button.json`],
     files: [

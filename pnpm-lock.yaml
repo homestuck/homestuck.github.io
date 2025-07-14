@@ -66,8 +66,8 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
       shadcn:
-        specifier: canary
-        version: 2.9.0-canary.1(@types/node@24.0.12)(typescript@5.8.3)
+        specifier: latest
+        version: 2.9.0(@types/node@24.0.12)(typescript@5.8.3)
       shiki:
         specifier: ^3.7.0
         version: 3.7.0
@@ -4123,8 +4123,8 @@ packages:
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
 
-  shadcn@2.9.0-canary.1:
-    resolution: {integrity: sha512-3K/koARnc2m7+j+hItF27x01MVjvetqULYPztchijqOu4ucYJ/2fYTc/HzdrWxtjWSco5Z+VQtr92PXc+rpMCA==}
+  shadcn@2.9.0:
+    resolution: {integrity: sha512-Wc3zs7SnNdLOiXhJFkdAyB+PZLvo9qk1noRz1kH6x3coMLS8f1SjqKlw5kAtX5abpvzLs07PRFnAtKpBApr20g==}
     hasBin: true
 
   sharp@0.34.2:
@@ -9467,7 +9467,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shadcn@2.9.0-canary.1(@types/node@24.0.12)(typescript@5.8.3):
+  shadcn@2.9.0(@types/node@24.0.12)(typescript@5.8.3):
     dependencies:
       '@antfu/ni': 23.3.1
       '@babel/core': 7.27.4

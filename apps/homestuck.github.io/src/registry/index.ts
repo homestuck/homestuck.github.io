@@ -25,8 +25,6 @@ export const registry = {
       ],
       registryDependencies: [
         `${URL}/r/utils.json`,
-        `${URL}/r/theme-dirk.json`,
-        `${URL}/r/theme-dark.json`,
         `${URL}/r/theme-default.json`,
       ],
       files: [],

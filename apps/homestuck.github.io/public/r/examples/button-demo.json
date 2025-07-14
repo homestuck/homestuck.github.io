@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "examples/button-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "https://homestuck.github.io/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "src/registry/examples/button-demo.tsx",
+      "content": "import { Button } from '@/registry/ui/button'\r\n\r\nexport default function ButtonDemo() {\r\n  return <Button>Button</Button>\r\n}\r\n",
+      "type": "registry:example"
+    }
+  ]
+}

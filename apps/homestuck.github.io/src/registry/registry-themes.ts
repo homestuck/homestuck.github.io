@@ -1,9 +1,12 @@
 import { type Registry } from 'shadcn/registry'
+import 'dotenv/config'
+const URL = String(process.env.APP_URL)
 
 export const themes: Registry['items'] = [
   {
     name: 'theme-default',
     type: 'registry:theme',
+    files: [],
     cssVars: {
       light: {
         radius: '0rem',
@@ -69,6 +72,7 @@ export const themes: Registry['items'] = [
   {
     name: 'theme-dirk',
     type: 'registry:theme',
+    files: [],
     css: {
       '[data-theme="dirk"]': {
         '--primary': '#f2a400' /* --color-dirk */,
@@ -79,6 +83,7 @@ export const themes: Registry['items'] = [
   {
     name: 'theme-dark',
     type: 'registry:theme',
+    files: [],
     cssVars: {
       dark: {
         background: '#000000',

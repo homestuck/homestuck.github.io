@@ -11,8 +11,6 @@
   ],
   "registryDependencies": [
     "https://homestuck.github.io/r/utils.json",
-    "https://homestuck.github.io/r/theme-dirk.json",
-    "https://homestuck.github.io/r/theme-dark.json",
     "https://homestuck.github.io/r/theme-default.json"
   ],
   "files": [],

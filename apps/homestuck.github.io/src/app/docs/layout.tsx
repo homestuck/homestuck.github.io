@@ -1,8 +1,17 @@
 import * as React from 'react'
+import { source } from '@/lib/source'
+import { RootProvider } from 'fumadocs-ui/provider'
+import { Providers } from '@/components/providers'
 import { DocsLayout } from 'fumadocs-ui/layouts/docs'
 
-import { source } from '@/lib/source'
-
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <DocsLayout tree={source.pageTree}>{children}</DocsLayout>
+  return (
+    <body className='bg-background flex flex-col w-full min-h-screen items-center'>
+      <RootProvider>
+        <Providers>
+          <DocsLayout tree={source.pageTree}>{children}</DocsLayout>
+        </Providers>
+      </RootProvider>
+    </body>
+  )
 }

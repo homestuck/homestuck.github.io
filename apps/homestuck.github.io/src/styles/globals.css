@@ -66,14 +66,14 @@
 :root {
   --radius: 0rem;
   --foreground: #000000;
-  --background: #535353;
+  --background: #ffffff;
   --main: #ffffff;
   --main-foreground: #000000;
   --card: #eeeeee;
   --card-foreground: #000000;
   --popover: #ffffff;
   --popover-foreground: #000000;
-  --primary: #4ce24e;
+  --primary: #535353;
   --primary-foreground: #ffffff;
   --secondary: #b8b8b8;
   --secondary-foreground: #ffffff;
@@ -127,11 +127,6 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-[data-theme="dirk"] {
-    --primary: #f2a400;
-    --ring: #f2a400;
 }
 
 @utility animate-text-ultimate-reward {

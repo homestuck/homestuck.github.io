@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-import { Index } from '@/__registry__'
+import { Index } from '@/registry/__index__'
 
 export const ComponentPreview: React.FC<{ name: string }> = ({ name }) => {
   const Preview = React.useMemo(() => {

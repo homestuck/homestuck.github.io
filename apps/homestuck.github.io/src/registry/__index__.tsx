@@ -10,7 +10,37 @@ export const Index: Record<string, any> = {
     name: "index",
     description: "",
     type: "registry:style",
-    registryDependencies: ["https://homestuck.github.io/r/utils.json","https://homestuck.github.io/r/theme-dirk.json","https://homestuck.github.io/r/theme-dark.json","https://homestuck.github.io/r/theme-default.json"],
+    registryDependencies: ["https://homestuck.github.io/r/utils.json","https://homestuck.github.io/r/theme-default.json"],
+    files: [],
+    component: null,
+    categories: undefined,
+    meta: undefined,
+  },
+  "theme-default": {
+    name: "theme-default",
+    description: "",
+    type: "registry:theme",
+    registryDependencies: undefined,
+    files: [],
+    component: null,
+    categories: undefined,
+    meta: undefined,
+  },
+  "theme-dirk": {
+    name: "theme-dirk",
+    description: "",
+    type: "registry:theme",
+    registryDependencies: undefined,
+    files: [],
+    component: null,
+    categories: undefined,
+    meta: undefined,
+  },
+  "theme-dark": {
+    name: "theme-dark",
+    description: "",
+    type: "registry:theme",
+    registryDependencies: undefined,
     files: [],
     component: null,
     categories: undefined,
@@ -22,7 +52,7 @@ export const Index: Record<string, any> = {
     type: "registry:lib",
     registryDependencies: undefined,
     files: [{
-      path: "registry/default/lib/utils.ts",
+      path: "src/registry/lib/utils.ts",
       type: "registry:lib",
       target: ""
     }],
@@ -40,7 +70,7 @@ export const Index: Record<string, any> = {
     type: "registry:ui",
     registryDependencies: [],
     files: [{
-      path: "registry/default/ui/button.tsx",
+      path: "src/registry/ui/button.tsx",
       type: "registry:ui",
       target: ""
     }],
@@ -52,13 +82,13 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
-  "button-demo": {
-    name: "button-demo",
+  "examples/button-demo": {
+    name: "examples/button-demo",
     description: "",
     type: "registry:example",
     registryDependencies: ["https://homestuck.github.io/r/button.json"],
     files: [{
-      path: "registry/default/examples/button-demo.tsx",
+      path: "src/registry/examples/button-demo.tsx",
       type: "registry:example",
       target: ""
     }],
