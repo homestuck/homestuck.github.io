@@ -16,7 +16,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/scripts/build-registry.mts"
   ],
   "exclude": ["node_modules"]
 }

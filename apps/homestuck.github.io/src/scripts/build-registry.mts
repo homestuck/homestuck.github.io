@@ -36,22 +36,22 @@ export const Index: Record<string, any> = {`
 
     const componentPath = item.files?.[0]?.path
       ? `@/registry/${item.files[0].path}`
-      : ""
+      : ''
     index += `
   "${item.name}": {
     name: "${item.name}",
-    description: "${item.description ?? ""}",
+    description: "${item.description ?? ''}",
     type: "${item.type}",
     registryDependencies: ${JSON.stringify(item.registryDependencies)},
     files: [${item.files?.map((file) => {
-      const filePath = `registry/default/${typeof file === "string" ? file : file.path}`
+      const filePath = `registry/default/${typeof file === 'string' ? file : file.path}`
       const resolvedFilePath = path.resolve(filePath)
-      return typeof file === "string"
+      return typeof file === 'string'
         ? `"${resolvedFilePath}"`
         : `{
       path: "${filePath}",
       type: "${file.type}",
-      target: "${file.target ?? ""}"
+      target: "${file.target ?? ''}"
     }`
     })}],
     component: ${
@@ -61,7 +61,7 @@ export const Index: Record<string, any> = {`
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     })`
-        : "null"
+        : 'null'
     },
     categories: ${JSON.stringify(item.categories)},
     meta: ${JSON.stringify(item.meta)},

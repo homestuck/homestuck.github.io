@@ -1,4 +1,7 @@
 import { type Registry } from 'shadcn/registry'
+import 'dotenv/config'
+
+const URL = String(process.env.APP_URL)
 
 export const ui: Registry['items'] = [
   {
