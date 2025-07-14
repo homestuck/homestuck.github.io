@@ -14,11 +14,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html
-      lang='en'
-      className='bg-background flex flex-col w-full min-h-screen items-center'
-      suppressHydrationWarning>
-      <body>
+    <html lang='en' suppressHydrationWarning>
+      <body className='bg-background flex flex-col w-full min-h-screen items-center'>
         <RootProvider>
           <Providers>{children}</Providers>
         </RootProvider>

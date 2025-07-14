@@ -5,8 +5,8 @@
   "files": [],
   "css": {
     "[data-theme=\"dirk\"]": {
-      "--primary": "var(--color-dirk)",
-      "--ring": "var(--color-dirk)"
+      "--primary": "#f2a400",
+      "--ring": "#f2a400"
     }
   }
 }

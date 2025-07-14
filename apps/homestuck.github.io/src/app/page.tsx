@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className='min-w-4xl bg-border text-main-foreground max-w-4xl w-fit flex flex-col items-center py-4 font-sans'>
       <article className='bg-main flex flex-col gap-4 justify-center min-w-lg max-w-lg w-fit *:not-first:px-6 *:last:pb-8'>
-        <header className='bg-mspa-100 border-b-4 p-4'>
+        <header className='bg-muted border-b-4 p-4'>
           <h1 className='uppercase font-mono text-4xl font-bold text-center'>
             The Unofficial Homestuck Collection
           </h1>

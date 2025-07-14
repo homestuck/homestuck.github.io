@@ -27,7 +27,7 @@ importers:
         specifier: 5.8.3
         version: 5.8.3
 
-  apps/homestuck:
+  apps/homestuck.github.io:
     dependencies:
       class-variance-authority:
         specifier: ^0.7.1

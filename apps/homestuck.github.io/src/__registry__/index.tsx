@@ -56,7 +56,7 @@ export const Index: Record<string, any> = {
     name: "button-demo",
     description: "",
     type: "registry:example",
-    registryDependencies: ["http://localhost:3000/r/button.json"],
+    registryDependencies: ["https://homestuck.github.io/r/button.json"],
     files: [{
       path: "registry/default/examples/button-demo.tsx",
       type: "registry:example",
