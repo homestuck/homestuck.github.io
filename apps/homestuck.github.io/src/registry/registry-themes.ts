@@ -4,23 +4,23 @@ const URL = String(process.env.APP_URL)
 
 export const themes: Registry['items'] = [
   {
-    name: 'theme-default',
+    name: 'themes/default',
     type: 'registry:theme',
     files: [],
     cssVars: {
       light: {
         radius: '0rem',
+        background: '#ffffff',
         foreground: '#000000',
-        background: '#535353' /* --color-mspa-700 */,
         main: '#ffffff',
         'main-foreground': '#000000',
         card: '#eeeeee' /* --color-mspa-100 */,
         'card-foreground': '#000000',
         popover: '#ffffff',
         'popover-foreground': '#000000',
-        primary: '#4ce24e' /* --color-sburb-beta */,
+        primary: '#535353' /* --color-mspa-700 */,
         'primary-foreground': '#ffffff',
-        secondary: '#b8b8b8' /* --color-mspa-400 */,
+        secondary: '#c6c6c6' /* --color-mspa-300 */,
         'secondary-foreground': '#ffffff',
         destructive: '#ff0000' /* --color-sburb-alpha */,
         'destructive-foreground': '#ffffff',
@@ -63,55 +63,34 @@ export const themes: Registry['items'] = [
         sidebar: '#000000',
         'sidebar-foreground': '#ffffff',
       },
-      theme: {
-        'extrude-x': '1',
-        'extrude-y': '1',
-      },
     },
   },
   {
-    name: 'theme-dirk',
+    name: 'themes/dirk',
     type: 'registry:theme',
     files: [],
+    registryDependencies: [`${URL}/r/themes/default.json`],
     css: {
       '[data-theme="dirk"]': {
-        '--primary': '#f2a400' /* --color-dirk */,
-        '--ring': '#f2a400' /* --color-dirk */,
+        ':root': {
+          '--primary': '#f2a400' /* --color-dirk */,
+          '--ring': '#f2a400' /* --color-dirk */,
+        },
       },
     },
   },
-  {
-    name: 'theme-dark',
-    type: 'registry:theme',
-    files: [],
-    cssVars: {
-      dark: {
-        background: '#000000',
-        foreground: '#ffffff',
-        main: '#3c3c3c' /* --color-mspa-800 */,
-        'main-foreground': '#ffffff',
-        card: '#323232' /* --color-mspa-900 */,
-        'card-foreground': '#ffffff',
-        popover: '#000000',
-        'popover-foreground': '#ffffff',
-        primary: '#900fff' /* --color-sgrub */,
-        'primary-foreground': '#ffffff',
-        secondary: '#535353' /* --color-mspa-700 */,
-        'secondary-foreground': '#ffffff',
-        destructive: '#ff0000' /* --color-sburb-alpha */,
-        'destructive-foreground': '#ffffff',
-        muted: '#535353' /* --color-mspa-700 */,
-        'muted-foreground': '#c6c6c6' /* --color-mspa-300 */,
-        accent: '#3c3c3c' /* --color-mspa-800 */,
-        'accent-foreground': '#eeeeee' /* --color-mspa-100 */,
-        border: '#9a9a9a' /* --color-mspa-500 */,
-        input: '#9a9a9a' /* --color-mspa-500 */,
-        ring: '#900fff' /* --color-sgrub */,
-        'toast-outline': '#9a9a9a' /* --color-mspa-500 */,
-        'toast-border': '#535353' /* --color-mspa-700 */,
-        sidebar: '#000000',
-        'sidebar-foreground': '#ffffff',
+  /* {
+    name: 'themes/testing',
+    type: 'registry:item',
+    files: [
+      {
+        path: 'styles/colors.css',
+        type: 'registry:file',
+        target: 'styles/colors.css',
       },
+    ],
+    css: {
+      "@import './colors.css'": {},
     },
-  },
+  }, */
 ]

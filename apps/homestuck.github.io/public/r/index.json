@@ -10,8 +10,8 @@
     "tailwind-merge"
   ],
   "registryDependencies": [
-    "https://homestuck.github.io/r/utils.json",
-    "https://homestuck.github.io/r/theme-default.json"
+    "http://localhost:3000/r/utils.json",
+    "http://localhost:3000/r/themes/testing.json"
   ],
   "files": [],
   "cssVars": {

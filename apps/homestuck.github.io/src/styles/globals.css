@@ -6,8 +6,6 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --extrude-x: 1;
-  --extrude-y: 1;
   --breakpoint-sm: 450px;
   --breakpoint-md: 650px;
   --breakpoint-lg: 950px;
@@ -32,92 +30,6 @@
   --font-mono: 'Courier New', monospace;
   --font-adobe-garamond-pro: 'Adobe Garamond Pro', serif;
   --font-homestuck: 'Homestuck', monospace;
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-toast-border: var(--toast-border);
-  --color-toast-outline: var(--toast-outline);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-destructive: var(--destructive);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
-  --color-card: var(--card);
-  --color-main-foreground: var(--main-foreground);
-  --color-main: var(--main);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-}
-
-:root {
-  --radius: 0rem;
-  --foreground: #000000;
-  --background: #ffffff;
-  --main: #ffffff;
-  --main-foreground: #000000;
-  --card: #eeeeee;
-  --card-foreground: #000000;
-  --popover: #ffffff;
-  --popover-foreground: #000000;
-  --primary: #535353;
-  --primary-foreground: #ffffff;
-  --secondary: #b8b8b8;
-  --secondary-foreground: #ffffff;
-  --destructive: #ff0000;
-  --destructive-foreground: #ffffff;
-  --muted: #eeeeee;
-  --muted-foreground: #535353;
-  --accent: #c6c6c6;
-  --accent-foreground: #323232;
-  --border: #c6c6c6;
-  --input: #9a9a9a;
-  --ring: #4ce24e;
-  --toast-outline: #c6c6c6;
-  --toast-border: #b8b8b8;
-  --sidebar: #535353;
-  --sidebar-foreground: #ffffff;
-}
-
-.dark {
-  --background: #000000;
-  --foreground: #ffffff;
-  --main: #3c3c3c;
-  --main-foreground: #ffffff;
-  --card: #323232;
-  --card-foreground: #ffffff;
-  --popover: #000000;
-  --popover-foreground: #ffffff;
-  --primary: #900fff;
-  --primary-foreground: #ffffff;
-  --secondary: #535353;
-  --secondary-foreground: #ffffff;
-  --destructive: #ff0000;
-  --destructive-foreground: #ffffff;
-  --muted: #535353;
-  --muted-foreground: #c6c6c6;
-  --accent: #3c3c3c;
-  --accent-foreground: #eeeeee;
-  --border: #9a9a9a;
-  --input: #9a9a9a;
-  --ring: #900fff;
-  --toast-outline: #9a9a9a;
-  --toast-border: #535353;
-  --sidebar: #000000;
-  --sidebar-foreground: #ffffff;
 }
 
 @layer base {
@@ -154,3 +66,5 @@
     --extrude-x: --value(--extrude--x- *);
     --extrude-y: --value(--extrude--y- *);
 }
+
+@import './colors.css';

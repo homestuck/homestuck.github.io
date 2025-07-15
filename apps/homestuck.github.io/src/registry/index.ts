@@ -25,7 +25,9 @@ export const registry = {
       ],
       registryDependencies: [
         `${URL}/r/utils.json`,
-        `${URL}/r/theme-default.json`,
+        /* `${URL}/r/themes/default.json`,
+        `${URL}/r/colors.json`, */
+        `${URL}/r/themes/testing.json`,
       ],
       files: [],
       cssVars: {
@@ -60,6 +62,7 @@ export const registry = {
         ...utilities,
       },
     },
+    ...colors,
     ...themes,
     ...lib,
     ...ui,

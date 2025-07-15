@@ -3,7 +3,7 @@
   "name": "examples/button-demo",
   "type": "registry:example",
   "registryDependencies": [
-    "https://homestuck.github.io/r/button.json"
+    "http://localhost:3000/r/button.json"
   ],
   "files": [
     {

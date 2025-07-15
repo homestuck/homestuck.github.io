@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "themes/dirk",
+  "type": "registry:theme",
+  "registryDependencies": [
+    "http://localhost:3000/r/themes/default.json"
+  ],
+  "files": [],
+  "css": {
+    "[data-theme=\"dirk\"]": {
+      ":root": {
+        "--primary": "#f2a400",
+        "--ring": "#f2a400"
+      }
+    }
+  }
+}

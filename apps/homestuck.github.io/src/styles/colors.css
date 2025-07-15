@@ -1,0 +1,381 @@
+@theme static {
+  /* Humans - Beta Kids */
+  /* ****************** */
+
+  --color-john: #0715cd;
+  --color-ghostytrickster: #0715cd;
+  --color-ectobiologist: #0715cd;
+  --color-rose: #b536da;
+  --color-tentacletherapist: #b536da;
+  --color-dave: #e00707;
+  --color-turntechgodhead: #e00707;
+  --color-jade: #4ac925;
+  --color-gardengnostic: #4ac925;
+
+  /* Humans - Alpha Kids */
+  /* ******************* */
+
+  --color-jane: #00d5f2;
+  --color-jane-epilogues: #0097d7;
+  --color-gutsygumshoe: #00d5f2;
+  --color-gutsygumshoe-epilogues: #0097d7;
+  --color-jake: #1f9400;
+  --color-golgothasterror: #1f9400;
+  --color-dirk: #f2a400;
+  --color-timaeustestified: #f2a400;
+  --color-autoresponder: #e00707;
+  --color-lil-hal: #e00707;
+  --color-timaeustestified-red: #e00707;
+  --color-roxy: #ff6ff2;
+  --color-tipsygnostalgic: #ff6ff2;
+
+  /* Humans - Omega Kids */
+  /* ******************* */
+
+  --color-harry: #0671cd;
+  --color-thespiansglamor: #0671cd;
+  --color-yiffy: #d00009;
+  --color-tavvy: #450077;
+  --color-tavros-kid: #450077;
+  --color-glutinousgymnast: #450077;
+  --color-vrissy: #005682;
+  --color-adamantgriftress: #005682;
+
+  /* Humans - Miscellaneous */
+  /* ********************** */
+
+  --color-joey: #71daff;
+  --color-jude: #d3ff8f;
+  --color-imode: #bdb49c;
+  --color-ideogramicdramaturgy: #bdb49c;
+  --color-silas: #71d666;
+  --color-avril: #ffc600;
+  --color-steezyheadbanger: #ffc600;
+  --color-obama: #000000;
+  --color-fedorafreak: #4b4b4b;
+
+  /* Trolls - Species */
+  /* **************** */
+
+  --color-troll: #c4c4c4;
+  --color-troll-1: #ffba29;
+  --color-troll-2: #ff9000;
+  --color-troll-3: #ff4200;
+  --color-troll-red: #ff0000;
+  --color-troll-rust: #a10000;
+  --color-troll-bronze: #a25203;
+  --color-troll-gold: #a1a100;
+  --color-troll-lime: #678900;
+  --color-troll-olive: #336601;
+  --color-troll-jade: #078446;
+  --color-troll-teal: #008282;
+  --color-troll-blue: #004182;
+  --color-troll-indigo: #0121cb;
+  --color-troll-purple: #440a7f;
+  --color-troll-violet: #6a006a;
+  --color-troll-fuchsia: #99004d;
+  --color-troll-hemospectrum: linear-gradient(
+    to right,
+    var(--color-troll-rust) calc((100% / 12) * 1),
+    var(--color-troll-bronze) calc((100% / 12) * 1) calc((100% / 12) * 2),
+    var(--color-troll-gold) 16.7% 25%,
+    var(--color-troll-lime) 25% 33.3%,
+    var(--color-troll-olive) 33.3% 41.7%,
+    var(--color-troll-jade) 41.7% 50%,
+    var(--color-troll-teal) 50% 58.3%,
+    var(--color-troll-blue) 58.3% 66.7%,
+    var(--color-troll-indigo) 66.7% 75%,
+    var(--color-troll-purple) 75% 83.3%,
+    var(--color-troll-violet) 83.3% 91.7%,
+    var(--color-troll-fuchsia) 91.7%
+  );
+
+  /** Trolls - Alternian */
+  /* ******************* */
+
+  --color-aradia: #a10000;
+  --color-aradia-blue: #000056;
+  --color-apocalypsearisen: #a10000;
+  --color-apocalypsearisen-blue: #000056;
+  --color-aradiabot: #000056;
+  --color-tavros: #a16000;
+  --color-adiostoreador: #a16000;
+  --color-sollux: #a1a100;
+  --color-twinarmageddons: #a1a100;
+  --color-karkat: #626262;
+  --color-karkat-epilogues: #7c7e81;
+  --color-karkat-red: #ff0000;
+  --color-carcinogeneticist: #626262;
+  --color-carcinogeneticist-epilogues: #7c7e81;
+  --color-carcinogeneticist-red: #ff0000;
+  --color-nepeta: #416600;
+  --color-arseniccatnip: #416600;
+  --color-kanaya: #008141;
+  --color-grimauxiliatrix: #008141;
+  --color-terezi: #008282;
+  --color-gallowscalibrator: #008282;
+  --color-vriska: #005682;
+  --color-arachnidsgrip: #005682;
+  --color-equius: #000056;
+  --color-centaurstesticle: #000056;
+  --color-gamzee: #2b0057;
+  --color-terminallycapricious: #2b0057;
+  --color-eridan: #6a006a;
+  --color-eridan-epilogues: #7e0048;
+  --color-caligulasaquarium: #6a006a;
+  --color-caligulasaquarium-epilogues: #7e0048;
+  --color-feferi: #77003c;
+  --color-cuttlefishculler: #77003c;
+
+  /* Trolls - Beforus */
+  /* **************** */
+
+  --color-damara: #a10000;
+  --color-rufioh: #a16000;
+  --color-mituna: #a1a100;
+  --color-kankri: #ff0000;
+  --color-meulin: #416600;
+  --color-porrim: #008141;
+  --color-latula: #008282;
+  --color-aranea: #005682;
+  --color-horuss: #000056;
+  --color-kurloz: #2b0057;
+  --color-cronus: #6a006a;
+  --color-meenah: #77003c;
+
+  /* Trolls - Miscellaneous */
+  /* ********************** */
+
+  --color-ruthie: #a10000;
+  --color-recidivousgainsayer: #a10000;
+  --color-alfonz: #416600;
+  --color-swifer: #078446;
+  --color-cliper: #078446;
+  --color-motter: #000056;
+
+  /** Cherubs - Species */
+  /* ****************** */
+
+  --color-cherub: #0b4100;
+  --color-cherub-red: #ff0000;
+  --color-cherub-green: #2ed73a;
+
+  /* Cherubs - The Twins */
+  /* ******************* */
+
+  --color-caliborn: #323232;
+  --color-caliborn-felt: #2ed73a;
+  --color-caliborn-felt-epilogues: #009c68;
+  --color-caliborn-red: #ff0000;
+  --color-calliope: #929292;
+  --color-calliope-epilogues: #a1a3a6;
+  --color-calliope-alt: #ff0000;
+  --color-calliope-al: #ff0000;
+  --color-calliope-red: #ff0000;
+  --color-calliope-green: #2ed73a;
+
+  /* The Felt */
+  /* ******** */
+
+  --color-lord-english: #2ed73a;
+  --color-lord-english-dark-red: #950015;
+  --color-lord-english-red: #df0000;
+  --color-lord-english-orange: #ff6000;
+  --color-lord-english-yellow: #ffea00;
+  --color-lord-english-green: #008140;
+  --color-lord-english-blue: #4040fd;
+  --color-lord-english-purple: #a357ff;
+  --color-doc-scratch: #ffffff;
+  --color-itchy: #ffea00;
+  --color-doze: #4040fd;
+  --color-trace: #df0000;
+  --color-clover: #a357ff;
+  --color-fin: #ff6000;
+  --color-die: #008140;
+  --color-crowbar: #950015;
+  --color-snowman: #000000;
+  --color-stitch: #ffea00;
+  --color-sawbuck: #4040fd;
+  --color-matchsticks: #df0000;
+  --color-eggs: #a357ff;
+  --color-biscuits: #ff6000;
+  --color-quarters: #008140;
+  --color-cans: #950015;
+
+  /* Sprites and Sprites^2 */
+  /* ********************* */
+
+  --color-harlequinsprite: #00d5f2;
+  --color-nannasprite: #00d5f2;
+  --color-jaspersprite: #f141ef;
+  --color-crowsprite: #f2a400;
+  --color-calsprite: #f2a400;
+  --color-davesprite: #f2a400;
+  --color-becsprite: #1f9400;
+  --color-jadesprite: #1f9400;
+
+  --color-tavrisprite: #0715cd;
+  --color-tavrosprite: #0715cd;
+  --color-gcatavrosprite: #0715cd;
+  --color-fefetasprite: #b536da;
+  --color-rosesprite: #b536da;
+  --color-jasprosesprite: #b536da;
+  --color-jasprosesprite-prefix: #f141ef;
+  --color-arquiusprite: #e00707;
+  --color-erisolsprite: #4ac925;
+  --color-nepetasprite: #4ac925;
+  --color-davepetasprite: #f2a400;
+  --color-davepetasprite-prefix: #4ac925;
+
+  --color-frogsprite: #a10000;
+  --color-aradiasprite: #a10000;
+  --color-tinkersprite: #a16000;
+  --color-bicyclopsprite: #a1a100;
+  --color-crabsprite: #626262;
+  --color-pouncesprite: #416600;
+  --color-mothersprite: #008141;
+  --color-dragonsprite: #008282;
+  --color-spidersprite: #005682;
+  --color-aurthoursprite: #000056;
+  --color-goatsprite: #2b0057;
+  --color-seahorsesprite: #6a006a;
+  --color-glbgolybsprite: #77003c;
+
+  /* The Game */
+  /* ******** */
+
+  --color-sburb-alpha: #ff0000;
+  --color-sburb-beta: #4ce24e;
+  --color-sburb-omega: #f2a400;
+  --color-sgrub: #900fff;
+
+  --color-green-sun: #00ed4f;
+  --color-green-sun-alt: #00d246;
+
+  --color-prospit: #e49700;
+  --color-prospit-icon: #ffff01;
+  --color-derse: #9700e4;
+  --color-derse-icon: #ff01fe;
+
+  /* God Tiers */
+  /* ********* */
+
+  --color-space: #000000;
+  --color-space-icon: #ffffff;
+  --color-time: #b70d0e;
+  --color-time-icon: #ff2106;
+  --color-mind: #00923d;
+  --color-mind-icon: #06ffc9;
+  --color-heart: #55142a;
+  --color-heart-icon: #bd1864;
+  --color-hope: #ffde55;
+  --color-hope-icon: #fdfdfd;
+  --color-rage: #520c61;
+  --color-rage-icon: #9c4dad;
+  --color-breath: #4379e6;
+  --color-breath-icon: #47dff9;
+  --color-blood: #3e1601;
+  --color-blood-icon: #ba1016;
+  --color-life: #a49787;
+  --color-life-icon: #72eb34;
+  --color-doom: #306800;
+  --color-doom-icon: #000000;
+  --color-light: #f0840c;
+  --color-light-icon: #f6fa4e;
+  --color-void: #104ea2;
+  --color-void-icon: #001a58;
+
+  /** ???????????? */
+  /* ************* */
+  --color-gavagecunctation: #8e5594;
+
+  /* Color Palettes */
+  /* ************** */
+
+  --color-mspa-1: #eeeeee;
+  --color-mspa-2: #e0e0e0;
+  --color-mspa-3: #c6c6c6;
+  --color-mspa-4: #b8b8b8;
+  --color-mspa-5: #7b7b7b;
+  --color-mspa-6: #535353;
+  --color-mspa-50: #f7f7f7;
+  --color-mspa-100: #eeeeee;
+  --color-mspa-200: #e0e0e0;
+  --color-mspa-300: #c6c6c6;
+  --color-mspa-400: #b8b8b8;
+  --color-mspa-500: #9a9a9a;
+  --color-mspa-600: #7b7b7b;
+  --color-mspa-700: #535353;
+  --color-mspa-800: #3c3c3c;
+  --color-mspa-900: #323232;
+  --color-mspa-950: #1f1f1f;
+
+  --color-felt-1: #2cff4b; /** scratch-txt-green */
+  --color-felt-2: #2ed73a; /** a6a6-lighter-green */
+  --color-felt-3: #168500; /** a6a6-light-green */
+  --color-felt-4: #0e4603; /** scratch-mid-green */
+  --color-felt-5: #073c00; /** a6a6-mid-green */
+  --color-felt-6: #082a00; /** scratch-dark-green */
+  --color-felt-7: #042300; /** a6a6-dark-green */
+
+  --color-felt-50: #2cff4b; /** scratch-txt-green */
+  --color-felt-100: #2ed73a; /** a6a6-lighter-green */
+  --color-felt-200: #1cbc1b;
+  --color-felt-300: #18a00b;
+  --color-felt-400: #168500; /** a6a6-light-green */
+  --color-felt-500: #147002;
+  --color-felt-600: #115b03;
+  --color-felt-700: #0e4603; /** scratch-mid-green */
+  --color-felt-800: #073c00; /** a6a6-mid-green */
+  --color-felt-900: #082a00; /** scratch-dark-green */
+  --color-felt-950: #042300; /** a6a6-dark-green */
+
+  --color-strife-1: #00e371;
+  --color-strife-2: #00c661;
+  --color-strife-3: #008c45;
+  --color-strife-4: #00603b;
+  --color-strife-50: #00e371;
+  --color-strife-100: #00d569;
+  --color-strife-200: #00c661;
+  --color-strife-300: #00b358;
+  --color-strife-400: #009f4e;
+  --color-strife-500: #008c45;
+  --color-strife-600: #007d43;
+  --color-strife-700: #006f40;
+  --color-strife-800: #00603b;
+  --color-strife-900: #004930;
+  --color-strife-950: #003324;
+
+  --color-pesterchum-50: #faff9b;
+  --color-pesterchum-100: #fff700;
+  --color-pesterchum-200: #ffe200;
+  --color-pesterchum-300: #ffcb00;
+  --color-pesterchum-400: #ffc316;
+  --color-pesterchum-500: #ffb400;
+  --color-pesterchum-600: #ffa500;
+  --color-pesterchum-700: #f79900;
+  --color-pesterchum-800: #df9200;
+  --color-pesterchum-900: #c18800;
+  --color-pesterchum-950: #ad7800;
+
+  --color-grist-50: oklch(82% 0.06 254);
+  --color-grist-100: oklch(78% 0.08 255);
+  --color-grist-200: oklch(74% 0.12 256);
+  --color-grist-300: oklch(70% 0.15 257);
+  --color-grist-400: oklch(66% 0.14 258);
+  --color-grist-500: oklch(62% 0.12 259);
+  --color-grist-600: oklch(58% 0.15 260);
+  --color-grist-700: oklch(54% 0.18 261);
+  --color-grist-800: oklch(50% 0.19 262);
+  --color-grist-900: oklch(46% 0.17 263);
+  --color-grist-950: oklch(42% 0.15 264);
+
+  --color-trickster-red: #ffd1d1;
+  --color-trickster-orange: #ffe6d1;
+  --color-trickster-yellow: #fff6d1;
+  --color-trickster-green: #d1ffe3;
+  --color-trickster-cyan: #d1f9ff;
+  --color-trickster-blue: #d1dcff;
+  --color-trickster-purple: #f0d1ff;
+  --color-trickster-violet: #ff73fd;
+}

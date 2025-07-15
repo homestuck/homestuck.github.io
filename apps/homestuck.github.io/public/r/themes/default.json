@@ -1,26 +1,22 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "theme-default",
+  "name": "themes/default",
   "type": "registry:theme",
   "files": [],
   "cssVars": {
-    "theme": {
-      "extrude-x": "1",
-      "extrude-y": "1"
-    },
     "light": {
       "radius": "0rem",
+      "background": "#ffffff",
       "foreground": "#000000",
-      "background": "#535353",
       "main": "#ffffff",
       "main-foreground": "#000000",
       "card": "#eeeeee",
       "card-foreground": "#000000",
       "popover": "#ffffff",
       "popover-foreground": "#000000",
-      "primary": "#4ce24e",
+      "primary": "#535353",
       "primary-foreground": "#ffffff",
-      "secondary": "#b8b8b8",
+      "secondary": "#c6c6c6",
       "secondary-foreground": "#ffffff",
       "destructive": "#ff0000",
       "destructive-foreground": "#ffffff",
