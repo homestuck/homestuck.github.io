@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <body className='bg-primary flex flex-col w-full min-h-screen items-center'>
+    <body className='bg-main flex flex-col w-full min-h-screen items-center'>
       <RootProvider>
         <Providers>{children}</Providers>
       </RootProvider>

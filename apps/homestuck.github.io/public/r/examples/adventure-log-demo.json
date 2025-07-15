@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "examples/adventure-log-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "http://localhost:3000/r/adventure-log.json"
+  ],
+  "files": [
+    {
+      "path": "src/registry/examples/adventure-log-demo.tsx",
+      "content": "import {\r\n  AdventureLog,\r\n  AdventureLogList,\r\n  AdventureLogItem,\r\n  AdventureLogDatetime,\r\n  AdventureLogLink,\r\n} from '@/registry/components/adventure-log'\r\n\r\nconst date = new Date(Date.now()).toDateString()\r\nconst items = [\r\n  {\r\n    title: '==>',\r\n    date,\r\n    href: '#',\r\n  },\r\n  {\r\n    title: '==>',\r\n    date,\r\n    href: '#',\r\n  },\r\n  {\r\n    title: '==>',\r\n    date,\r\n    href: '#',\r\n  },\r\n]\r\n\r\nexport default function AdventureLogDemo() {\r\n  return (\r\n    <AdventureLog>\r\n      <AdventureLogList>\r\n        {items.map(({ title, date, href }, index) => (\r\n          <AdventureLogItem key={index}>\r\n            <AdventureLogDatetime dateTime={date} />\r\n            {' - '}\r\n            <AdventureLogLink href={href}>\"{title}\"</AdventureLogLink>\r\n          </AdventureLogItem>\r\n        ))}\r\n      </AdventureLogList>\r\n    </AdventureLog>\r\n  )\r\n}\r\n",
+      "type": "registry:example"
+    }
+  ]
+}

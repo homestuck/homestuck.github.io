@@ -5,6 +5,8 @@
     {
       "extends": "none",
       "name": "index",
+      "description": "",
+      "author": "Kohi <kohi@homestuck.com>",
       "type": "registry:style",
       "dependencies": [
         "class-variance-authority",
@@ -14,37 +16,9 @@
       ],
       "registryDependencies": [
         "http://localhost:3000/r/utils.json",
-        "http://localhost:3000/r/themes/testing.json"
+        "http://localhost:3000/r/themes/default.json"
       ],
       "files": [],
-      "cssVars": {
-        "theme": {
-          "breakpoint-sm": "450px",
-          "breakpoint-md": "650px",
-          "breakpoint-lg": "950px",
-          "breakpoint-xl": "1280px",
-          "breakpoint-2xl": "1920px",
-          "container-3xs": "200px",
-          "container-2xs": "325px",
-          "container-xs": "450px",
-          "container-sm": "525px",
-          "container-md": "575px",
-          "container-lg": "650px",
-          "container-xl": "775px",
-          "container-2xl": "850px",
-          "container-3xl": "900px",
-          "container-4xl": "950px",
-          "container-5xl": "1000px",
-          "container-6xl": "1050px",
-          "container-7xl": "1080px",
-          "container-prose": "65ch",
-          "font-sans": "'Verdana', sans-serif",
-          "font-serif": "'Adobe Garamond Pro', serif",
-          "font-mono": "'Courier New', monospace",
-          "font-adobe-garamond-pro": "'Adobe Garamond Pro', serif",
-          "font-homestuck": "'Homestuck', monospace"
-        }
-      },
       "css": {
         "@utility animate-text-ultimate-reward": {
           "animation-composition": "add"
@@ -53,8 +27,6 @@
           "border-image": "--value(--border-image- *)"
         },
         "@utility shadow-extrude-*": {
-          "--extrude-x": "--modifier(--extrude--x- *)",
-          "--extrude-y": "--modifier(--extrude--y- *)",
           "--tw-shadow": "--value(--shadow-extrude- *)",
           "box-shadow": "var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)"
         },
@@ -544,22 +516,22 @@
           "radius": "0rem",
           "background": "#ffffff",
           "foreground": "#000000",
-          "main": "#ffffff",
-          "main-foreground": "#000000",
+          "main": "#535353",
+          "main-foreground": "#ffffff",
           "card": "#eeeeee",
           "card-foreground": "#000000",
           "popover": "#ffffff",
           "popover-foreground": "#000000",
-          "primary": "#535353",
-          "primary-foreground": "#ffffff",
-          "secondary": "#c6c6c6",
-          "secondary-foreground": "#ffffff",
+          "primary": "#9a9a9a",
+          "primary-foreground": "#000000",
+          "secondary": "#e0e0e0",
+          "secondary-foreground": "#000000",
           "destructive": "#ff0000",
           "destructive-foreground": "#ffffff",
           "muted": "#eeeeee",
           "muted-foreground": "#535353",
-          "accent": "#c6c6c6",
-          "accent-foreground": "#323232",
+          "accent": "#4ce24e",
+          "accent-foreground": "#ffffff",
           "border": "#c6c6c6",
           "input": "#9a9a9a",
           "ring": "#4ce24e",
@@ -571,13 +543,13 @@
         "dark": {
           "background": "#000000",
           "foreground": "#ffffff",
-          "main": "#3c3c3c",
+          "main": "#000000",
           "main-foreground": "#ffffff",
           "card": "#323232",
           "card-foreground": "#ffffff",
           "popover": "#000000",
           "popover-foreground": "#ffffff",
-          "primary": "#900fff",
+          "primary": "#b8b8b8",
           "primary-foreground": "#ffffff",
           "secondary": "#535353",
           "secondary-foreground": "#ffffff",
@@ -585,7 +557,7 @@
           "destructive-foreground": "#ffffff",
           "muted": "#535353",
           "muted-foreground": "#c6c6c6",
-          "accent": "#3c3c3c",
+          "accent": "#900fff",
           "accent-foreground": "#eeeeee",
           "border": "#9a9a9a",
           "input": "#9a9a9a",
@@ -594,6 +566,43 @@
           "toast-border": "#535353",
           "sidebar": "#000000",
           "sidebar-foreground": "#ffffff"
+        },
+        "theme": {
+          "breakpoint-sm": "450px",
+          "breakpoint-md": "650px",
+          "breakpoint-lg": "950px",
+          "breakpoint-xl": "1280px",
+          "breakpoint-2xl": "1920px",
+          "container-3xs": "200px",
+          "container-2xs": "325px",
+          "container-xs": "450px",
+          "container-sm": "525px",
+          "container-md": "575px",
+          "container-lg": "650px",
+          "container-xl": "775px",
+          "container-2xl": "850px",
+          "container-3xl": "900px",
+          "container-4xl": "950px",
+          "container-5xl": "1000px",
+          "container-6xl": "1050px",
+          "container-7xl": "1080px",
+          "container-prose": "65ch",
+          "radius-2xs": "calc(var(--radius) * 0.25)",
+          "radius-xs": "calc(var(--radius) * 0.5)",
+          "radius-sm": "calc(var(--radius) * 0.75)",
+          "radius-base": "var(--radius)",
+          "radius-lg": "calc(var(--radius) * 1.25)",
+          "radius-xl": "calc(var(--radius) * 1.5)",
+          "radius-max": "calc(var(--radius) * Infinity)",
+          "font-sans": "'Verdana', sans-serif",
+          "font-serif": "'Adobe Garamond Pro', serif",
+          "font-mono": "'Courier New', monospace",
+          "font-adobe-garamond-pro": "'Adobe Garamond Pro', serif",
+          "font-homestuck": "'Homestuck', monospace",
+          "color-primary-border": "color-mix(in oklch, var(--primary) 100%, var(--foreground) 50% )",
+          "color-secondary-border": "color-mix(in oklch, var(--secondary) 100%, var(--foreground) 50% )",
+          "color-destructive-border": "color-mix(in oklch, var(--destructive) 100%, var(--foreground) 50% )",
+          "shadow-extrude-base": "calc(1px * var(--extrude-x)) calc(1px * var(--extrude-y)) 0px var(--tw-shadow-color, rgb(0 0 0 / 1)), calc(2px * var(--extrude-x)) calc(2px * var(--extrude-y)) 0px var(--tw-shadow-color, rgb(0 0 0 / 1))"
         }
       }
     },
@@ -606,10 +615,8 @@
       ],
       "css": {
         "[data-theme=\"dirk\"]": {
-          ":root": {
-            "--primary": "#f2a400",
-            "--ring": "#f2a400"
-          }
+          "--accent": "#f2a400",
+          "--ring": "#f2a400"
         }
       }
     },
@@ -644,6 +651,48 @@
       ]
     },
     {
+      "name": "link",
+      "type": "registry:ui",
+      "title": "Link",
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "src/registry/ui/link.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "adventure-log",
+      "type": "registry:component",
+      "title": "Adventure Log",
+      "dependencies": [
+        "date-fns"
+      ],
+      "registryDependencies": [
+        "http://localhost:3000/r/link.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/components/adventure-log.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "examples/adventure-log-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "http://localhost:3000/r/adventure-log.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/examples/adventure-log-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "examples/button-demo",
       "type": "registry:example",
       "registryDependencies": [
@@ -652,6 +701,45 @@
       "files": [
         {
           "path": "src/registry/examples/button-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "examples/button-secondary",
+      "type": "registry:example",
+      "registryDependencies": [
+        "http://localhost:3000/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/examples/button-secondary.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "examples/button-destructive",
+      "type": "registry:example",
+      "registryDependencies": [
+        "http://localhost:3000/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/examples/button-destructive.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "examples/button-outline",
+      "type": "registry:example",
+      "registryDependencies": [
+        "http://localhost:3000/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/examples/button-outline.tsx",
           "type": "registry:example"
         }
       ]

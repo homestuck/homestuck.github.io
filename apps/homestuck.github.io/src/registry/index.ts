@@ -5,6 +5,7 @@ import { ui } from './registry-ui'
 import { examples } from './registry-examples'
 import { colors } from './style-colors'
 import { utilities } from './style-utilities'
+import { components } from './registry-components'
 
 import 'dotenv/config'
 const URL = String(process.env.APP_URL)
@@ -16,6 +17,8 @@ export const registry = {
     {
       extends: 'none',
       name: 'index',
+      description: '',
+      author: 'Kohi <kohi@homestuck.com>',
       type: 'registry:style',
       dependencies: [
         'class-variance-authority',
@@ -25,39 +28,10 @@ export const registry = {
       ],
       registryDependencies: [
         `${URL}/r/utils.json`,
-        /* `${URL}/r/themes/default.json`,
-        `${URL}/r/colors.json`, */
-        `${URL}/r/themes/testing.json`,
+        `${URL}/r/themes/default.json`,
+        // `${URL}/r/themes/dirk.json`,
       ],
       files: [],
-      cssVars: {
-        theme: {
-          'breakpoint-sm': '450px',
-          'breakpoint-md': '650px',
-          'breakpoint-lg': '950px',
-          'breakpoint-xl': '1280px',
-          'breakpoint-2xl': '1920px',
-          'container-3xs': '200px',
-          'container-2xs': '325px',
-          'container-xs': '450px',
-          'container-sm': '525px',
-          'container-md': '575px',
-          'container-lg': '650px',
-          'container-xl': '775px',
-          'container-2xl': '850px',
-          'container-3xl': '900px',
-          'container-4xl': '950px',
-          'container-5xl': '1000px',
-          'container-6xl': '1050px',
-          'container-7xl': '1080px',
-          'container-prose': '65ch',
-          'font-sans': "'Verdana', sans-serif",
-          'font-serif': "'Adobe Garamond Pro', serif",
-          'font-mono': "'Courier New', monospace",
-          'font-adobe-garamond-pro': "'Adobe Garamond Pro', serif",
-          'font-homestuck': "'Homestuck', monospace",
-        },
-      },
       css: {
         ...utilities,
       },
@@ -66,6 +40,7 @@ export const registry = {
     ...themes,
     ...lib,
     ...ui,
+    ...components,
     ...examples,
   ],
 } satisfies Registry

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "examples/button-outline",
+  "type": "registry:example",
+  "registryDependencies": [
+    "http://localhost:3000/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "src/registry/examples/button-outline.tsx",
+      "content": "import { Button } from '@/registry/ui/button'\r\n\r\nexport default function ButtonOutline() {\r\n  return <Button variant='outline'>Outline</Button>\r\n}\r\n",
+      "type": "registry:example"
+    }
+  ]
+}

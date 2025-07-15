@@ -10,7 +10,7 @@ export const Index: Record<string, any> = {
     name: "index",
     description: "",
     type: "registry:style",
-    registryDependencies: ["http://localhost:3000/r/utils.json","http://localhost:3000/r/themes/testing.json"],
+    registryDependencies: ["http://localhost:3000/r/utils.json","http://localhost:3000/r/themes/default.json"],
     files: [],
     component: null,
     categories: undefined,
@@ -82,6 +82,60 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  "link": {
+    name: "link",
+    description: "",
+    type: "registry:ui",
+    registryDependencies: [],
+    files: [{
+      path: "src/registry/ui/link.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/ui/link.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "adventure-log": {
+    name: "adventure-log",
+    description: "",
+    type: "registry:component",
+    registryDependencies: ["http://localhost:3000/r/link.json"],
+    files: [{
+      path: "src/registry/components/adventure-log.tsx",
+      type: "registry:component",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/components/adventure-log.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "examples/adventure-log-demo": {
+    name: "examples/adventure-log-demo",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["http://localhost:3000/r/adventure-log.json"],
+    files: [{
+      path: "src/registry/examples/adventure-log-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/examples/adventure-log-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
   "examples/button-demo": {
     name: "examples/button-demo",
     description: "",
@@ -94,6 +148,60 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/examples/button-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "examples/button-secondary": {
+    name: "examples/button-secondary",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["http://localhost:3000/r/button.json"],
+    files: [{
+      path: "src/registry/examples/button-secondary.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/examples/button-secondary.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "examples/button-destructive": {
+    name: "examples/button-destructive",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["http://localhost:3000/r/button.json"],
+    files: [{
+      path: "src/registry/examples/button-destructive.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/examples/button-destructive.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "examples/button-outline": {
+    name: "examples/button-outline",
+    description: "",
+    type: "registry:example",
+    registryDependencies: ["http://localhost:3000/r/button.json"],
+    files: [{
+      path: "src/registry/examples/button-outline.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/examples/button-outline.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

@@ -6,7 +6,7 @@ import { DocsLayout } from 'fumadocs-ui/layouts/docs'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <body className='bg-background flex flex-col w-full min-h-screen items-center'>
+    <body className='bg-fd-background flex flex-col w-full min-h-screen'>
       <RootProvider>
         <Providers>
           <DocsLayout tree={source.pageTree}>{children}</DocsLayout>

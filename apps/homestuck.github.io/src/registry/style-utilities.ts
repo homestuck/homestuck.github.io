@@ -6,8 +6,6 @@ export const utilities = {
     'border-image': '--value(--border-image- *)',
   },
   '@utility shadow-extrude-*': {
-    '--extrude-x': '--modifier(--extrude--x- *)',
-    '--extrude-y': '--modifier(--extrude--y- *)',
     '--tw-shadow': '--value(--shadow-extrude- *)',
     'box-shadow':
       'var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)',

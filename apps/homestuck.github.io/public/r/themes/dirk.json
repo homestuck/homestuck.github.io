@@ -8,10 +8,8 @@
   "files": [],
   "css": {
     "[data-theme=\"dirk\"]": {
-      ":root": {
-        "--primary": "#f2a400",
-        "--ring": "#f2a400"
-      }
+      "--accent": "#f2a400",
+      "--ring": "#f2a400"
     }
   }
 }

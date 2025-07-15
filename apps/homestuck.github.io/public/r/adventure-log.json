@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adventure-log",
+  "type": "registry:component",
+  "title": "Adventure Log",
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "http://localhost:3000/r/link.json"
+  ],
+  "files": [
+    {
+      "path": "src/registry/components/adventure-log.tsx",
+      "content": "import * as React from 'react'\r\nimport { format as dfnsFormat } from 'date-fns'\r\nimport { cn, tw } from '@/lib/utils'\r\nimport { Link } from '@/registry/ui/link'\r\n\r\nconst styles = {\r\n  Root: tw`text-foreground`,\r\n  Item: tw`main-foreground text-xs font-bold font-sans`,\r\n  List: tw`list-none`,\r\n  Link: tw`font-bold text-[blue] decoration-[blue] visited:text-[purple] visited:decoration-[purple]`,\r\n}\r\n\r\nfunction AdventureLog({ className, ...props }: React.ComponentProps<'nav'>) {\r\n  return (\r\n    <nav\r\n      role='navigation'\r\n      aria-label='adventure-log'\r\n      data-slot='adventure-log'\r\n      className={cn(styles.Root, className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction AdventureLogList({ className, ...props }: React.ComponentProps<'ol'>) {\r\n  return (\r\n    <ol\r\n      data-slot='adventure-log-list'\r\n      className={cn(styles.List, className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nfunction AdventureLogItem({\r\n  children,\r\n  className,\r\n  ...props\r\n}: React.ComponentProps<'li'>) {\r\n  return (\r\n    <li\r\n      data-slot='adventure-log-item'\r\n      className={cn(styles.Item, className)}\r\n      {...props}>\r\n      {children}\r\n    </li>\r\n  )\r\n}\r\n\r\nfunction AdventureLogDatetime({\r\n  dateTime,\r\n  format = 'MM/dd/yyyy',\r\n  ...props\r\n}: React.ComponentProps<'time'> & { format?: string }) {\r\n  return (\r\n    <time data-slot='adventure-log-datetime' dateTime={dateTime} {...props}>\r\n      {dfnsFormat(new Date(String(dateTime)), format)}\r\n    </time>\r\n  )\r\n}\r\n\r\nfunction AdventureLogLink({\r\n  className,\r\n  href,\r\n  ...props\r\n}: React.ComponentProps<typeof Link>) {\r\n  return (\r\n    <Link\r\n      data-slot='adventure-log-link'\r\n      href={href}\r\n      className={cn(styles.Link, className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\n\r\nexport {\r\n  AdventureLog,\r\n  AdventureLogList,\r\n  AdventureLogItem,\r\n  AdventureLogDatetime,\r\n  AdventureLogLink,\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

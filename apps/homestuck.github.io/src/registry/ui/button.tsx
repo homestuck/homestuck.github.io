@@ -10,7 +10,7 @@ const buttonStyles = cva(
         primary: tw`border-primary-border border-t-primary-border/50 border-l-primary-border/50 bg-primary text-primary-foreground text-shadow-primary-border active:not-disabled:border-primary-border/50 active:not-disabled:border-t-primary-border active:not-disabled:border-l-primary-border shadow-primary-border`,
         secondary: tw`border-secondary-border border-t-secondary-border/50 border-l-secondary-border/50 bg-secondary text-secondary-foreground text-shadow-secondary-border active:not-disabled:border-secondary-border/50 active:not-disabled:border-t-secondary-border active:not-disabled:border-l-secondary-border shadow-secondary-border`,
         destructive: tw`border-destructive-border border-t-destructive-border/50 border-l-destructive-border/50 bg-destructive text-destructive-foreground text-shadow-destructive-border active:not-disabled:border-destructive-border/50 active:not-disabled:border-t-destructive-border active:not-disabled:border-l-destructive-border shadow-destructive-border`,
-        outline: tw`text-main-foreground border-border border-t-border/50 border-l-border/50 text-shadow-background active:not-disabled:border-border/50 active:not-disabled:border-t-border active:not-disabled:border-l-border shadow-border bg-main`,
+        outline: tw`text-foreground border-border border-t-border/50 border-l-border/50 text-shadow-background active:not-disabled:border-border/50 active:not-disabled:border-t-border active:not-disabled:border-l-border shadow-border bg-transparent`,
       },
       size: {
         default: tw`h-10 px-3 py-2`,
@@ -24,7 +24,7 @@ const buttonStyles = cva(
       },
     },
     defaultVariants: {
-      variant: 'secondary',
+      variant: 'primary',
       size: 'default',
       extrude: true,
     },
@@ -34,7 +34,7 @@ const buttonStyles = cva(
 /**
  * Button
  */
-const Button = ({
+function Button({
   className,
   variant,
   size,
@@ -44,7 +44,7 @@ const Button = ({
 }: React.ComponentProps<'button'> &
   VariantProps<typeof buttonStyles> & {
     asChild?: boolean
-  }) => {
+  }) {
   const Comp = asChild ? Slot.Root : 'button'
   return (
     <Comp

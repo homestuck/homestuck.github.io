@@ -10,6 +10,14 @@ import {
 import { source } from '@/lib/source'
 import { getMDXComponents } from '@/components/mdx'
 
+export const revalidate = false
+export const dynamic = 'force-static'
+export const dynamicParams = false
+
+export function generateStaticParams() {
+  return source.generateParams()
+}
+
 export default async function Page(props: {
   params: Promise<{ slug?: string[] }>
 }) {

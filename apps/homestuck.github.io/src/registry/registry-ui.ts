@@ -17,4 +17,16 @@ export const ui: Registry['items'] = [
       },
     ],
   },
+  {
+    name: 'link',
+    type: 'registry:ui',
+    title: 'Link',
+    registryDependencies: [],
+    files: [
+      {
+        path: 'ui/link.tsx',
+        type: 'registry:ui',
+      },
+    ],
+  },
 ]

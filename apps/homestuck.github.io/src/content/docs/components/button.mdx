@@ -1,0 +1,93 @@
+---
+title: Button
+description: Displays a button or a component that looks like a button.
+shadcnDocsLink: https://ui.shadcn.com/docs/components/button
+---
+
+<ComponentPreview name='examples/button-demo' description='A button' />
+
+## Installation
+
+<Tabs items={['CLI', 'Manual']}>
+  <Tab value="CLI">
+```bash
+npx shadcn@latest add button
+```
+</Tab>
+
+<Tab value="Manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ui/react-slot
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name='button' title='components/ui/button.tsx' />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</Tab>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { Button } from '@/components/ui/button'
+```
+
+```tsx
+<Button variant='outline'>Button</Button>
+```
+
+## Link
+
+You can use the `asChild` prop to make another component look like a button. Here's an example of a link that looks like a button.
+
+```tsx showLineNumbers
+import { Link } from 'next/link'
+
+import { Button } from '@/components/ui/button'
+
+export function LinkAsButton() {
+  return (
+    <Button asChild>
+      <Link href='/login'>Login</Link>
+    </Button>
+  )
+}
+```
+
+## Examples
+
+### Default
+
+<ComponentPreview name='examples/button-demo' description='A primary button' />
+
+### Secondary
+
+<ComponentPreview
+  name='examples/button-secondary'
+  description='A secondary button'
+/>
+
+### Destructive
+
+<ComponentPreview
+  name='examples/button-destructive'
+  description='A destructive button'
+/>
+
+### Outline
+
+<ComponentPreview
+  name='examples/button-outline'
+  description='A button using the outline variant.'
+/>

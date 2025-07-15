@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "link",
+  "type": "registry:ui",
+  "title": "Link",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/registry/ui/link.tsx",
+      "content": "import * as React from 'react'\r\nimport { cn, tw } from '@/lib/utils'\r\n\r\nconst styles = tw`ring-offset-main focus-visible:outline-hidden focus-visible:ring-accent cursor-pointer hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2 decoration-1`\r\n\r\n/**\r\n * Link\r\n */\r\nfunction Link({ href, className, ...props }: React.ComponentProps<'a'>) {\r\n  return (\r\n    <a\r\n      data-slot='link'\r\n      href={href}\r\n      className={cn(styles, className)}\r\n      {...props}\r\n    />\r\n  )\r\n}\r\nLink.displayName = 'Link'\r\n\r\nexport { Link }\r\n",
+      "type": "registry:ui"
+    }
+  ]
+}
