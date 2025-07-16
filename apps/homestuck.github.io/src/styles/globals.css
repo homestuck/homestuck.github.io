@@ -37,10 +37,25 @@
   --font-mono: 'Courier New', monospace;
   --font-adobe-garamond-pro: 'Adobe Garamond Pro', serif;
   --font-homestuck: 'Homestuck', monospace;
-  --color-primary-border: color-mix(in oklch, var(--primary) 100%, var(--foreground) 50% );
-  --color-secondary-border: color-mix(in oklch, var(--secondary) 100%, var(--foreground) 50% );
-  --color-destructive-border: color-mix(in oklch, var(--destructive) 100%, var(--foreground) 50% );
-  --shadow-extrude-base: 1px 1px 0px var(--tw-shadow-color, rgb(0 0 0 / 1)), 2px 2px 0px var(--tw-shadow-color, rgb(0 0 0 / 1));
+  --color-primary-border: color-mix(
+    in oklch,
+    var(--primary) 100%,
+    var(--foreground) 50%
+  );
+  --color-secondary-border: color-mix(
+    in oklch,
+    var(--secondary) 100%,
+    var(--foreground) 50%
+  );
+  --color-destructive-border: color-mix(
+    in oklch,
+    var(--destructive) 100%,
+    var(--foreground) 50%
+  );
+  --shadow-extrude-sm: 1px 1px 0px var(--tw-shadow-color, rgb(0 0 0 / 1));
+  --shadow-extrude-base:
+    1px 1px 0px var(--tw-shadow-color, rgb(0 0 0 / 1)),
+    2px 2px 0px var(--tw-shadow-color, rgb(0 0 0 / 1));
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
   --color-toast-border: var(--toast-border);
@@ -67,6 +82,7 @@
   --color-foreground: var(--foreground);
   --color-background: var(--background);
   --radius-md: calc(var(--radius) - 2px);
+  --extrude-base: 4px;
 }
 
 :root {
@@ -136,25 +152,50 @@
 }
 
 @utility animate-text-ultimate-reward {
-    animation-composition: add;
+  animation-composition: add;
 }
 
 @utility border-image-* {
-    border-image: --value(--border-image- *);
+  border-image: --value(--border-image-*);
 }
 
 @utility shadow-extrude-* {
-    --tw-shadow: --value(--shadow-extrude- *);
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  --tw-shadow: --value(--shadow-extrude-*);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
 
 @utility text-shadow-extrude-* {
-    --extrude-x: --modifier(--extrude--x- *);
-    --extrude-y: --modifier(--extrude--y- *);
-    text-shadow: --value(--text-shadow-extrude- *);
+  --extrude-x: --modifier(--extrude--x-*);
+  --extrude-y: --modifier(--extrude--y-*);
+  text-shadow: --value(--text-shadow-extrude-*);
 }
 
 @utility extrude-* {
-    --extrude-x: --value(--extrude--x- *);
-    --extrude-y: --value(--extrude--y- *);
+  --extrude-color: var(--tw-shadow-color, rgb(0 0 0 / 1));
+  --tw-shadow: --value(--extrude-*) --value(--extrude-*) 0px
+    var(--extrude-color);
+  box-shadow:
+    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+
+  &::before {
+    border-width: --value(--extrude-*);
+    @apply box-border size-[--value(--extrude-*)] absolute content-[''] border-solid border-transparent border-t-(--extrude-color) border-r-(--extrude-color) bottom-0 left-0;
+  }
+
+  /*   &::after {
+    @apply right-0 border-inherit border-t-transparent border-r-transparent;
+  } */
+
+  /* &:hover {
+    &::before {
+      left: calc(--value(--extrude-*) * -2);
+    }
+
+    &::after {
+      top: calc(--value(--extrude-*) * -2);
+    }
+  } */
 }

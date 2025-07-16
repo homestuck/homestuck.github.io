@@ -101,8 +101,14 @@ export const themes: Registry['items'] = [
           'color-mix(in oklch, var(--secondary) 100%, var(--foreground) 50% )',
         'color-destructive-border':
           'color-mix(in oklch, var(--destructive) 100%, var(--foreground) 50% )',
+        'shadow-extrude-sm':
+          '1px 1px 0px var(--tw-shadow-color, rgb(0 0 0 / 1))',
         'shadow-extrude-base':
-          'calc(1px * var(--extrude-x)) calc(1px * var(--extrude-y)) 0px var(--tw-shadow-color, rgb(0 0 0 / 1)), calc(2px * var(--extrude-x)) calc(2px * var(--extrude-y)) 0px var(--tw-shadow-color, rgb(0 0 0 / 1))',
+          '1px 1px 0px var(--tw-shadow-color, rgb(0 0 0 / 1)), 2px 2px 0px var(--tw-shadow-color, rgb(0 0 0 / 1))',
+        'shadow-extrude-lg':
+          '1px 1px 0px var(--tw-shadow-color, rgb(0 0 0 / 1)), 2px 2px 0px var(--tw-shadow-color, rgb(0 0 0 / 1)), 3px 3px 0px var(--tw-shadow-color, rgb(0 0 0 / 1))',
+        'shadow-extrude-xl':
+          '1px 1px 0px var(--tw-shadow-color, rgb(0 0 0 / 1)), 2px 2px 0px var(--tw-shadow-color, rgb(0 0 0 / 1)), 3px 3px 0px var(--tw-shadow-color, rgb(0 0 0 / 1)), 4px 4px 0px var(--tw-shadow-color, rgb(0 0 0 / 1))',
       },
     },
   },
