@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import { RootProvider } from 'fumadocs-ui/provider'
 import { Providers } from '@/components/providers'
 import '@/styles/globals.css'

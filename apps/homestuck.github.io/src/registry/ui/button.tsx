@@ -19,8 +19,7 @@ const buttonStyles = cva(
         icon: tw`aspect-square`,
       },
       extrude: {
-        /* true: tw`hover:not-disabled:not-active:not-focus-visible:shadow-extrude-base text-shadow-extrude-base hover:not-disabled:not-active:not-focus-visible:-translate-[2px] shadow-none`, */
-        true: tw`hover:not-disabled:not-active:not-focus-visible:extrude-base hover:not-disabled:not-active:not-focus-visible:-translate-[2px]`,
+        true: tw`hover:not-disabled:not-active:not-focus-visible:shadow-extrude-base text-shadow-extrude-base hover:not-disabled:not-active:not-focus-visible:-translate-[2px] shadow-none`,
         false: null,
       },
     },

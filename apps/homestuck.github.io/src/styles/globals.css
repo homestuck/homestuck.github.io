@@ -82,7 +82,7 @@
   --color-foreground: var(--foreground);
   --color-background: var(--background);
   --radius-md: calc(var(--radius) - 2px);
-  --extrude-base: 4px;
+  --extrude-base: 16px;
 }
 
 :root {
@@ -95,7 +95,7 @@
   --card-foreground: #000000;
   --popover: #ffffff;
   --popover-foreground: #000000;
-  --primary: #9a9a9a;
+  --primary: #c6c6c6;
   --primary-foreground: #000000;
   --secondary: #e0e0e0;
   --secondary-foreground: #000000;
@@ -117,23 +117,23 @@
 .dark {
   --background: #000000;
   --foreground: #ffffff;
-  --main: #000000;
+  --main: #1f1f1f;
   --main-foreground: #ffffff;
   --card: #323232;
   --card-foreground: #ffffff;
   --popover: #000000;
   --popover-foreground: #ffffff;
-  --primary: #b8b8b8;
+  --primary: #3c3c3c;
   --primary-foreground: #ffffff;
   --secondary: #535353;
   --secondary-foreground: #ffffff;
   --destructive: #ff0000;
   --destructive-foreground: #ffffff;
-  --muted: #535353;
+  --muted: #323232;
   --muted-foreground: #c6c6c6;
   --accent: #900fff;
   --accent-foreground: #eeeeee;
-  --border: #9a9a9a;
+  --border: #535353;
   --input: #9a9a9a;
   --ring: #900fff;
   --toast-outline: #9a9a9a;
@@ -170,32 +170,4 @@
   --extrude-x: --modifier(--extrude--x-*);
   --extrude-y: --modifier(--extrude--y-*);
   text-shadow: --value(--text-shadow-extrude-*);
-}
-
-@utility extrude-* {
-  --extrude-color: var(--tw-shadow-color, rgb(0 0 0 / 1));
-  --tw-shadow: --value(--extrude-*) --value(--extrude-*) 0px
-    var(--extrude-color);
-  box-shadow:
-    var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
-    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-
-  &::before {
-    border-width: --value(--extrude-*);
-    @apply box-border size-[--value(--extrude-*)] absolute content-[''] border-solid border-transparent border-t-(--extrude-color) border-r-(--extrude-color) bottom-0 left-0;
-  }
-
-  /*   &::after {
-    @apply right-0 border-inherit border-t-transparent border-r-transparent;
-  } */
-
-  /* &:hover {
-    &::before {
-      left: calc(--value(--extrude-*) * -2);
-    }
-
-    &::after {
-      top: calc(--value(--extrude-*) * -2);
-    }
-  } */
 }

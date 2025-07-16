@@ -5,7 +5,8 @@ const withMDX = createMDX()
 
 const nextConfig: NextConfig = {
   /* config options here */
-  // output: 'export',
+  reactStrictMode: true,
+  output: 'export',
   // assetPrefix: process.env.ASSET_PREFIX,
   // basePath: process.env.BASE_PATH,
 }
