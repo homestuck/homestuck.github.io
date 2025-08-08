@@ -31,10 +31,10 @@ export default function Home() {
             original <em>Unofficial Homestuck Collection</em> will continue to
             be preserved and available here. It should be noted that while it
             remains open source, any official updates or changes will be made on
-            a new Homestuck Independant Creative Union controlled GitHub fork
+            a new Homestuck controlled GitHub fork
             that can be found{' '}
             <a
-              href='https://github.com/homestuck-independent-creative-union/unofficial-homestuck-collection'
+              href='https://github.com/homestuck/unofficial-homestuck-collection'
               target='_blank'
               className='text-[blue] decoration-[blue] visited:text-[purple] visited:decoration-[purple] underline decoration-1'>
               here
