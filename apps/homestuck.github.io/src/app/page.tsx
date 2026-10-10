@@ -73,10 +73,10 @@ export default function Home() {
                 </td>
                 <td>
                   <a
-                    href='https://cdn.beyondcanon.com/uhc/assets.zip'
+                    href='https://archive.homestuck.com/unofficial-homestuck-collection/assets.zip'
                     target='_blank'
                     className='text-[blue] decoration-[blue] visited:text-[purple] visited:decoration-[purple] underline decoration-1'>
-                    AssetPackV2.zip
+                    Direct Download
                   </a>
                 </td>
               </tr>
